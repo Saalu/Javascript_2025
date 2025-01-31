@@ -1,13 +1,17 @@
-// let name = prompt("What is your name")
+// OBJECTS
+const person = {
+    firstName: "Saalu",
+    lastName:"Issaka",
+    job: "Web Developer",
+    email: "email@example.com",
+    age:36,
+    living:{
+        city: "Accra",
+        country: "Ghana"
+    }
+}
 
-document.getElementById('welcome').innerHTML = 'Welcome: ' + name
+// console.log(person)
+// console.log(person.living)
 
-const months = new Array("Jan", "Feb", "Mar", "Apr")
-
-months.pop('2')
-// months.push("May","June")
-// months.unshift("Month 1")
-
-// // place an item in an array
-// months.splice(3, null, "Slide it in")
-console.log(months)
+// console.log("Nice having you")
