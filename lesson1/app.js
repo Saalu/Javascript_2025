@@ -1,19 +1,20 @@
-const fruits = ['mango', 'orange', 'pineapple', 'apple']
 
-fruits.forEach(function(juice, index){
-    // console.log(`${[index]} : ${juice}`);  
-})
-
-const person = {
-  name: "Kwame",
-  age: 30,
-  location: "Accra",
-  occupation: "Developer",
-  hobbies: ["coding", "cycling", "chess"]
-};
-
-// console.log(person.hobbies);
-for (let key in person){
-    console.log(`${person[key]}`);
+try {
+    something()
+} catch (err) {
+    console.log(err.message);
     
 }
+
+
+function getClient(){
+    console.log('Downloading......');
+
+    setTimeout(()=>{
+        console.log('Complete...');
+        
+    }, 3000)
+    
+}
+
+getClient()
