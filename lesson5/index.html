@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    input{
+      padding: .5rem 1.5rem;
+
+    }
+    .btn{
+      padding: .5rem 1.5rem;
+      background-color: orangered;
+      color: #fff;
+      border-radius: .5rem;
+      border: none;
+      cursor: pointer;
+      
+    }
+    .btn:hover{
+      background-color: rgb(223, 60, 1);
+
+    }
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+      padding: 6px 10px;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    section {
+      padding: 20px;
+    }
+    header {
+      background-color: #f4f4f4;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .active{
+      font-size: larger;
+      color: orangered
+
+    }
+    .test{
+      font-weight: 700;
+      color: goldenrod;
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navigation">
+    <a class="link" href="#home">Home</a>
+    <a class="link" href="#about">About</a>
+    <a class="link" href="#services">Services</a>
+    <a class="link" href="#contact">Contact</a>
+  </nav>
+
+  <header id="home">
+    <h1 class="" id="heading">Welcome to My Website</h1>
+    <p>This is a simple layout with navigation.</p>
+
+    <form action="#" method="post" id="form">
+  <!-- <label for="name">Name:</label><br> -->
+  <input type="text" id="name" name="name" placeholder="Search"><br><br>
+
+  <button id="btn" class="btn">Click Me</button>
+</form>
+
+  </header>
+
+
+  <!-- <nav id="secondary">
+    <a class="link" href="#">For Business</a>
+    <a class="link" href="#">Blog</a>
+    <a class="link" href="#">Services</a>
+    <a class="link" href="#">Support</a>
+    <a class="link" href="#">About us</a>
+  </nav> -->
+  <main id="main">
+     <section class="sub"  id="about">
+    <h2>About</h2>
+    <p id="para">Here's a little bit about what this site is for.</p>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link-tex</a>
+        <a href="#">Link</a>
+      </nav>
+  </section>
+
+  <section class="sub" id="services">
+    <h2>Services</h2>
+    <p>We offer helpful things, like code and charisma.</p>
+  </section>
+
+  <section class="sub" id="contact">
+    <h2>Contact</h2>
+    <p>Reach out and say hi!</p>
+  </section>
+  <section class="sub" id="review">
+    <h2>Reviews</h2>
+    <p>All reviews out and check out</p>
+  </section>
+  <section class="sub" id="subs">
+    <h2>Subcribers</h2>
+    <p>Subcribers and out and say hi!</p>
+  </section>
+ 
+
+
+</main>
+
+</body>
+
+ <script src="app.js"></script>
+</html>
