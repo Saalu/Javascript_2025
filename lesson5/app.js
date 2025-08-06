@@ -1,13 +1,12 @@
 
-const button = document.querySelector('#btn')
-const searchInput = document.querySelector('input')
-const form = document.querySelector('#form')
-form.addEventListener('submit', (e) =>{
+const shopingCart = document.querySelector('.testing')
 
-    let element ;
-    e.preventDefault()
-   
+shopingCart.addEventListener('click', function(e){
+
+    if(e.target.classList.contains('remove')){
+        e.target.parentElement.remove()
+    }
+
+    console.log(e.target);
     
-    console.log(searchInput.value);
-    console.log(`Type: ${e.type}`);
-} )
+})
