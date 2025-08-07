@@ -1,13 +1,29 @@
-// ======LOCAL STORAGE BASICS======  //
+const cities = ['Tamale', 'Techiman', 'Accra', 'Kumasi']
 
-//add to storage
-localStorage.setItem('name', 'Saalu')
+// Inline Callback --
+// cities.forEach((c) =>{
+//     console.log(c); 
+// })
 
-//remove to storage
-localStorage.removeItem('')
 
-//read from storage
-localStorage.getItem('name')
+// callback with func declaration
+const callback = (c) => {
+    console.log(c);
+}
 
-//clear all from storage
-localStorage.clear()
+// cities.forEach(callback)
+
+
+// testing
+const cities = ['Tamale', 'Techiman', 'Accra', 'Kumasi']
+
+
+const displayCities = (c) => {
+    setTimeout(function(){
+        let html ='';
+        cities.forEach((city) => html += `<li>${city}</li>`)
+        document.querySelector('#items').innerHTML = html
+    },1000)
+}
+
+displayCities()
