@@ -18,8 +18,6 @@ const client = {
     regions: ['Tamale', 'Accra', 'Kumasi', 'Wa']
 }
 
-
-
 function reservation(complete, 
     {
      paymentMethod = 'cash',
