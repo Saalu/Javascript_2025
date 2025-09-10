@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Simple Website</title>
   <style>
+    *{
+      text-decoration: none;
+    }
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -12,6 +15,11 @@
     input{
       padding: .5rem 1.5rem;
 
+    }
+    #container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .btn{
       padding: .5rem 1.5rem;
@@ -57,6 +65,24 @@
       font-weight: 700;
       color: goldenrod;
     }
+
+    .card{
+      padding: .1rem;
+     margin: 1rem;
+      width: 12rem;
+      background:#ccc;
+      border-radius: .5rem;
+      text-align: center;
+    }
+    .card img{
+      width: 100%;
+      height: rem;
+    }
+
+    .info-card{
+      padding: 1rem;
+
+    }
   </style>
 </head>
 <body>
@@ -72,12 +98,31 @@
     <h1 class="" id="heading">Welcome to My Website</h1>
     <div id="items"></div>
 
-  <button id="btn" class="btn">LOAD DATA</button>
-  <button id="btn" class="btn">JSON</button>
-  <button id="btn" class="btn">JSON API</button>
+  <button id="btn1" class="btn">LOAD DATA</button>
+  <button id="btn2" class="btn">JSON</button>
+  <button id="btn3" class="btn">JSON API</button>
   </header>
 
-  <div id="result"></div>
+
+  <div id="container">
+    <div class="card">
+      <img src="../lesson10/badge.png" alt="" class="image">
+      <div class="info-card">
+        <h4>HTML, CSS3, Javascript</h4>
+        <!-- removerble -->
+        <div class="cart" style="display: flex; justify-content: center; gap:1rem">
+          <div class="box">
+            <div class="top">TOP</div>
+            <div class="down">DOWN</div>
+          </div>
+          <div class="remove" style="color: red; cursor: pointer;">X</div>
+        </div>
+        <p>Lorem, ipsum dolor sit vero perspiciatis!</p>
+          <!-- <a href="#" class="btn">add to cart</a> -->
+          <div class="cart-btn btn">add to cart</div>
+        </div>
+    </div>
+  </div>
 
 </body>
  <script src="app.js"></script>

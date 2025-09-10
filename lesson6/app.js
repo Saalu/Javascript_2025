@@ -1,16 +1,16 @@
-const storageContent = localStorage.getItem('names')
+const applyDiscount = new Promise(function(resolve, reject){
+    const discount = true
 
-let names;
-if(storageContent === null){
-    names = []
-}else{
-    names = JSON.parse(storageContent)
-}
+    if(discount){
+        resolve('Discount Applied')
+    }else{
+        reject('Discount failed...')
+    }
+})
 
-
-names.push('Saalu')
-names.push('Walter')
-names.push('Brown')
-
-
-localStorage.setItem('names', JSON.stringify(names))
+applyDiscount.then((res) => {
+    console.log(res);
+}).catch((err) => {
+    console.log(err);
+    
+})
