@@ -1,0 +1,153 @@
+    *{
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+   
+    #container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-top: 1rem; */
+        border: #333 1px solid;  
+        gap: 1rem; 
+        flex-wrap: wrap;
+    }
+    
+    .wrapper{
+        border: 4px solid #eee;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .7);
+        border-radius: 10px;
+        margin: .5rem;
+    }
+    
+    #result{
+      padding: 2rem;
+      width: 12rem;
+      height: 17rem;
+      text-align: center;
+      border: 6px solid #ddd;
+      border-radius: 4px;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+
+   #result .img-container{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 100%;
+        background: #555;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        border: #ccc 3px solid;
+        margin-bottom: 10px;
+
+    }
+    
+    #result img{
+         height: 5rem;
+        width: 5rem;
+        border-radius: 100%;
+    }
+    
+    .vital h3{
+        margin-bottom: -5px;
+        
+        
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .output{
+      padding: .5rem;
+      border:  rgb(223, 60, 1) .01rem solid;
+
+
+    }
+    .btn{
+      padding: .5rem 1.5rem;
+      background-color: orangered;
+      color: #fff;
+      border-radius: .5rem;
+      border: none;
+      cursor: pointer;
+      
+    }
+    .btn:hover{
+      background-color: rgb(223, 60, 1);
+
+    }
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px;
+      padding: 6px 10px;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    section {
+      padding: 20px;
+    }
+   
+    header {
+      background-color: #f4f4f4;
+      padding: 30px;
+      text-align: center;
+    }
+
+     #heading{
+        margin-top: -5px;
+        color: #333;
+    }
+
+
+    *{
+        color: #333;
+        
+    }
+
+
+
+
+
+
+    .active{
+      font-size: larger;
+      color: orangered
+
+    }
+    .test{
+      font-weight: 700;
+      color: goldenrod;
+    }

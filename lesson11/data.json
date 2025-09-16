@@ -1,6 +1,5 @@
 [
-    {"name": "Saalu", "position": "Engineer"},
-    {"name": "Maryam", "position": "Teacher"},
-    {"name": "Suleman", "position": "Advisor"},
-    {"name": "Abubakar", "position": "Mechanic"}
+    {"name": "Saalu", "title": "Engineer"},
+    {"name": "Maryam", "title": "Teacher"},
+    {"name": "Suleman", "title": "Advisor"}
 ]
