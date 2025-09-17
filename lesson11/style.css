@@ -180,12 +180,12 @@
     }
 
 
-    /* .form-container .active{
+    .form-container .active{
         display: none;
-    } */
+    }
 
     #close-form{
-        font-size: 2rem;
+        font-size: 5rem;
         position: fixed;
         top: 5%;
         right: 5%;

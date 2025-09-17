@@ -3,17 +3,12 @@
 document.getElementById('close-form').addEventListener('click', toggleClass)
  
     function toggleClass(){
-    //   const el =  document.getElementById('close-form')
+      const el =  document.getElementById('close-form')
       const form =  document.getElementById('form-container')
 
       form.style.display = "none"
     
     }
-
-
-
-
-
 
 
 const output = document.getElementById('container')
