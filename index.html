@@ -4,15 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .hello.active{
+            display: none;
+        }
+    </style>
 </head>
 <body>
    
     <div id="welcome">Hi there</div>
-    <div id="hello"></div>
+    <div class="hello ">Test the power of elements</div>
+
+    <button onclick="hideElement()">Hide</button>
+    <button onclick="showElement()">Show</button>
 
 
 </body>
 
-<script src="script.js"></script>
+<script >
+    function hideElement(e){
+      const el =  document.querySelector('.hello')
+
+      el.classList.add('active')
+
+        // console.log('Test now' + el);  
+    }
+
+    function showElement(e){
+      const el =  document.querySelector('.hello')
+
+      el.classList.remove('active')
+
+
+    }
+
+
+
+</script>
 <script src="prev.js"></script>
 </html>

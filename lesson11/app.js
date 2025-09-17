@@ -1,6 +1,15 @@
 // document.getElementById('btn1').addEventListener('click', loadText)
 // document.getElementById('btn2').addEventListener('click', loadJSON)
-// document.getElementById('btn3').addEventListener('click', loadAPI)
+document.getElementById('close-form').addEventListener('click', toggleClass)
+ 
+    function toggleClass(){
+      const el =  document.getElementById('close-form')
+      const form =  document.getElementById('form-container')
+
+      form.style.display = "none"
+    
+    }
+
 
 const output = document.getElementById('container')
 
