@@ -1,7 +1,11 @@
     *{
         text-decoration: none;
         list-style: none;
+        border: none;
+        outline: none;
         color: #333;
+        transition: all .5s;
+
     }
 
     html{
@@ -51,28 +55,55 @@
 
     .form-btn {
         background: rgb(10, 160, 110);
-        font-weight: 600;
-        
+        font-weight: 600; 
     }
     .form-btn:hover{
         box-shadow: 0 1px 10px rgba(0, 0, 0, .3);
     }
 
     .home {
-      /* background-color: #f4f4f4; */
-      /* padding: 30px; */
       text-align: center;
-      
     }
 
     .home #heading{
-        /* margin-top: -5px; */
         color: #333;
         margin-top: 3rem;
         font-size: 2.5rem;
-
     }
 
+    /* -----search form---- */
+    .search-form{
+        border: .1px #ccc solid;
+        border-radius: 5px;
+        padding: .5rem 1rem;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        width: 20rem;
+    }
+
+    .search-form input{
+        padding: 0 1rem;
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .search-form:hover{
+        border: .1px #888 solid;
+    }
+
+    .search-form label{
+        color: #ccc;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+    
+    .search-form label:hover{
+        color: #888;
+        transform: scale(1.1);
+    }
+
+    /* -----search form END---- */
 
     #container{
         display: flex;
@@ -85,12 +116,15 @@
     }
     
     #container .wrapper{
-        border: 4px solid #eee;
+        border: 2px solid #d60e0e;
         box-shadow: 0 5px 10px rgba(0, 0, 0, .7);
         border-radius: 10px;
         margin: .5rem;
     }
-    
+
+    #container .wrapper:hover{
+        transform: scale(1.01)
+    }
     #result{
       padding: 2rem;
       width: 12rem;
@@ -99,10 +133,9 @@
       border: 6px solid #ddd;
       border-radius: 4px;
       display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
 
 
@@ -118,7 +151,6 @@
         margin-bottom: 10px;
 
     }
-    
     #result img{
          height: 5rem;
         width: 5rem;
@@ -128,9 +160,6 @@
     .vital h3{
         margin-bottom: -5px;
    }
-
-
-
 
     .output{
       padding: .5rem;
@@ -145,6 +174,7 @@
         align-items: center;
         justify-content: center;
         background: rgba(0, 0, 0, .9);
+        background: rgba(255, 255, 255, .9);
         position: fixed;
         top: 0; left: 0;
         width: 100%;
@@ -153,7 +183,7 @@
 
     }
     .form-container form{
-        box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
         border-radius: .5rem;
         background: #fff;
         width: 40rem;
@@ -171,8 +201,6 @@
         border: #ccc .1px solid;  
         border-radius: 5px;
         margin: .7rem 0;
-        /* font-size: rem; */
-        /* margin-left: -.5rem; */
     }
 
     .form-container  form .btn{
@@ -180,30 +208,29 @@
     }
 
 
-    .form-container .active{
+    .form-container.active{
         display: none;
     }
 
-    #close-form{
-        font-size: 5rem;
+    /* ------Close Form---------- */
+    .close-form{
+        font-size: 2rem;
         position: fixed;
         top: 5%;
         right: 5%;
     }
     
-    #close-form span{
+    .close-form span{
         cursor: pointer;
-        color: #fff;
+        color: orangered;
         
     }
-    #close-form span:hover{
-        color: rgba(255, 0, 0, 0.733);
-        transition: ease-in 1s ;
+    .close-form span:hover{
+        color: red;
+        transition: ease-in .3s ;
 
     }
     
-
-
 
     /* .active{
       font-size: larger;

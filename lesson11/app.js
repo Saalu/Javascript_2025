@@ -1,18 +1,23 @@
 // document.getElementById('btn1').addEventListener('click', loadText)
 // document.getElementById('btn2').addEventListener('click', loadJSON)
-document.getElementById('close-form').addEventListener('click', toggleClass)
+ document.querySelector('.close-form').addEventListener('click', closeForm)
+ document.querySelector('.form-btn').addEventListener('click', showForm)
  
-    function toggleClass(){
-      const el =  document.getElementById('close-form')
-      const form =  document.getElementById('form-container')
+    function closeForm(){
+      const form =  document.querySelector('.form-container')
+    //   form.style.display = "none"
+      form.classList.add('active')
 
-      form.style.display = "none"
-    
+      console.log('Form' + form);
+    }
+    function showForm(){
+      const form =  document.querySelector('.form-container')
+    //   form.style.display = "display"
+      form.classList.remove('active')
+      console.log('Form' + form);
     }
 
-
 const output = document.getElementById('container')
-
 const btn1 = document.getElementById('btn1')
 const btn2 = document.getElementById('btn2')
 const btn3 = document.getElementById('btn3')
