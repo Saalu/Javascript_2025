@@ -3,43 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Scroll Navigation Example</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        .hello.active{
-            display: none;
-        }
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: top 0.3s;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.content {
+    padding-top: 50px; /* to make space for the navbar */
+}
+
     </style>
 </head>
 <body>
-   
-    <div id="welcome">Hi there</div>
-    <div class="hello ">Test the power of elements</div>
 
-    <button onclick="hideElement()">Hide</button>
-    <button onclick="showElement()">Show</button>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
+    <div class="content">
+        <!-- Just to make the page scrollable -->
+        <div style="height: 2000px;">
+            <h1>Scroll Down</h1>
+        </div>
+    </div>
 
+    <script src="script.js"></script>
 </body>
-
-<script >
-    function hideElement(e){
-      const el =  document.querySelector('.hello')
-
-      el.classList.add('active')
-
-        // console.log('Test now' + el);  
-    }
-
-    function showElement(e){
-      const el =  document.querySelector('.hello')
-
-      el.classList.remove('active')
-
-
-    }
-
-
-
-</script>
-<script src="prev.js"></script>
 </html>

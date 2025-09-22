@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    
+:root{
+    --black:#444;
+    --light-dark: #666;
+    --white:#fff;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+} 
+
+*{
+    font-family: "Inter", sans-serif;
+    margin: 0;padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+        color: var(--black);
+        transition: all .2s linear;
+        transition: width none;
+    }
+
+    html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-padding-top: 5rem;
+        scroll-behavior: smooth;
+    }
+    html::-webkit-scrollbar{
+        width: .8rem;
+    }
+
+    html::-webkit-scrollbar-track{
+        background: transparent;
+    }
+    html::-webkit-scrollbar-thumb{
+        background: var(--black);
+    }
+    html::-webkit-scrollbar-thumb:hover{
+        background: var(--light-dark);
+    }
+    
+/* =============Header Nav =========== */
+    .header .navigation{
+        background: var(--white);
+        padding: 2rem 9%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    .header .navigation{
+        transition: top .3s;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .header .navigation.active{
+        box-shadow: 0 1px 10px rgba(0, 0, 0, .3);
+        background: rgba(255, 255, 255, .9);
+    }
+    
+    .header .navigation .logo{
+        font-size: 4.5rem;
+        font-weight: bolder;
+        color: var(--black);
+    }
+    
+    .header .navbar a{
+        font-size: 1.7rem;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 700;
+        margin-left: 1.5rem;
+
+
+    }
+    .header .navbar a:hover{
+        background-color: var(--light-dark);
+        color: var(--white);
+        border: var(--border);
+    }
+    .header .navbar a:active{
+        text-decoration: underline;
+        color: blueviolet;
+    }
+   
+    nav a:hover {
+      text-decoration: underline;
+    }
+/* =============Header Nav END =========== */
+
+    body{
+        height: 200rem;
+    }
+/* =============Home Section=========== */
+section{
+        padding: 2.5rem 10%;
+        margin-top: 10rem;
+
+}
+
+p{
+    font-size: 1.6rem;
+}
+    .home {
+        padding-top: 8rem;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px saddlebrown solid; */
+    }
+
+    .home #heading{
+        font-size: 3.5rem;
+    }
+    .home .heading-2{
+        margin-top: 1rem;
+    }
+    .home .heading-3{
+        margin-top: 2rem;
+        font-size: 1.7rem;
+    }
+
+    .home .left-desc{
+        text-align: left;
+        width: 65%;
+    }
+
+    /* ----social icon---- */
+    .home .left-desc .icons{
+        margin-top: 2rem;
+        display: flex;
+        gap: 3rem;
+    }
+    .home .left-desc .icons a{
+        display: inline-block;
+        padding: 2rem 0;
+        text-align: left;
+        cursor: pointer;
+        /* margin-left: 1.5rem; */
+        font-size: 2.5rem;
+    }
+    .home .left-desc .icons a:hover{
+        transform: scale(1.1);
+        color: blue;
+    }
+
+    .home .left-desc .connection{
+        margin-top: 3rem;
+        font-size: 1.7rem;
+        display: flex;
+        /* justify-content: center; */
+        gap: 5rem;
+
+    }
+    .home .left-desc .connection .fas{
+        margin-left: .5rem;
+    }
+    .home .left-desc .connection .contact{
+        font-size: 1.7rem;
+    }
+    .home .left-desc .connection .resume{
+        font-size: 1.7rem;
+    }
+
+
+
+
+
+
+    /* ==========Right Section========== */
+    .home .right-desc{
+        width: 30%;
+        /* background: #ccc; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .home .right-desc .profile{
+        background: #444;
+        border-radius: 50%;
+        width: 22rem;
+        height: 22rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .right-desc .profile .wrapper{
+        background: #666;
+        border-radius: 50%;
+        width: 20rem;
+        height: 20rem;
+        background-image: url('../sample.png');
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    
+
+  
+    
+/* =============Home Section END =========== */
+
+
+    
+
+    @media (max-width:760px) {
+        html{
+            font-size: 60%;
+        }
+
+        .header .navigation nav{
+            display: none;
+        }
+
+
+        .home .left-desc{
+        width: 80%;
+        }
+
+        .home .right-desc{
+        width: 10%;
+        /* background: #444; */
+        }
+
+         .home .right-desc{
+            display: none;
+        }
+        
+    }
+    @media (max-width:560px) {
+        html{
+            font-size: 55%;
+        }
+        
+        .home #heading{
+        font-size: 3rem;
+        }
+        .home .left-desc{
+        width: 100%;
+        }
+       
+        
+    }
+
+    @media (max-width:450px) {
+        html{
+            font-size: 50%;
+        }
+
+    }
