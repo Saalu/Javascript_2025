@@ -1,5 +1,8 @@
 let lastScrollTop = 0;
 const navbar = document.querySelector(".header .navigation");
+const mobileNav = document.querySelector('.mobile-nav')
+const navMenu = document.querySelector('.menu')
+const logo = document.querySelector('.logo')
 
 window.addEventListener("scroll", function() {
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -19,3 +22,14 @@ window.addEventListener("scroll", function() {
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
+
+document.querySelector('.close-menu').onclick = () =>{
+    mobileNav.classList.remove('active')
+    logo.style.opacity = "1"
+    document.body.style.overflow = 'hidden';  
+}
+document.querySelector('.menu').onclick = () =>{
+    logo.style.opacity = "0"
+    mobileNav.classList.add('active')
+    // console.log('menu here')  
+}
