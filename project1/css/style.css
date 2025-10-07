@@ -110,7 +110,6 @@
         background-color: var(--background-blur-dark);
     }
 
-
     /* ------------Mobile Nav--------- */
     .mobile-nav{
         position: fixed;
@@ -251,7 +250,6 @@ p{
     top: 0; left: 0;
     z-index: -1;
     transition: all .4s;
-
 }
 
 .btn.contact::after{
@@ -261,8 +259,6 @@ p{
     transform: scaleX(1.3) scaleY(1.5);
     opacity: 0;
 }
-
-
 /* ==========Botton Design END========= */
 
 
@@ -313,10 +309,6 @@ p{
         cursor: pointer;
         font-size: 2.5rem;
     }
-    /* .home .left-desc .icons a:hover{
-        transform: scale(1.1);
-        color: blue;
-    } */
 
     .home .left-desc .connection{
         margin-top: 3rem;
@@ -378,18 +370,63 @@ p{
 
 
 /* =============Project Section  =========== */
-.projects .content{
+/* .projects .wrap{
         margin-top: 10rem;
         display: flex;
         justify-content: space-between;
         display: grid;
         grid-template-columns: repeat(auto, minmax(25rem, 1fr));
         gap: 1.5rem;
+    } */
+
+.projects .wrap{
+     border: var(--border);
+     box-shadow: 0 .1rem .5rem rgba(0, 0, 0, .2);
+     display: flex;
+     gap: 1rem;
+     border-radius: .5rem;
+     overflow: hidden;
+     margin-bottom: 5rem;
+     height: 28rem;
+
     }
 
-    .projects .content{
+.projects .wrap:hover{
+     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .3);
+    }
+
+    .projects .wrap h3{
+        font-size: 2.2rem;
 
     }
+    .projects .wrap img{
+        width: 45rem;
+        height: 100%;
+    }
+
+    .projects .wrap .description{
+        padding: 3rem;
+    }
+    .projects .wrap p{
+        margin: 2rem 0;
+        font-size: 1.6rem;
+    }
+    .projects .wrap .tech-stack{
+        display: flex;
+        gap: 1rem;
+        font-size: 1.3rem;
+        margin-bottom: 3rem ;
+    }
+
+    .projects .wrap .links a{
+        display: inline-block;
+        padding-right: 2rem;
+        font-size: 1.3rem;
+    }
+    .projects .wrap .links a:hover{
+        font-weight: 600;
+    }
+
 /* =============Project Section END =========== */
 
 
@@ -478,8 +515,18 @@ footer{
          .home .right-desc{
             display: none;
         }
+
+        .projects .wrap img{
+            width: 25rem;
+
+        }
+
+        .projects .wrap .description{
+        padding: 1.5rem;
+        }
         
     }
+
     @media (max-width:560px) {
         html{
             font-size: 55%;
@@ -499,7 +546,27 @@ footer{
         .home .left-desc{
         width: 100%;
         }
+
+        .projects .wrap {
+            margin-bottom: 3rem;
+            height: 30rem;
+
+        }
+        .projects .wrap img{
+            display: none;
+        }
+
+        .projects .wrap .description{
+            padding: 2.5rem;
+        }
+        .projects .wrap .tech-stack{
+            margin-bottom: 2rem;
+
+        }
        
+        .projects .wrap .links a{
+            margin: 2rem 0;
+        }
         
     }
 
